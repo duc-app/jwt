@@ -10,4 +10,7 @@ module.exports = function(app) {
     .get(usersCtrl.detail)
     .put(usersCtrl.update)
     .delete(usersCtrl.delete);
+
+    app.route('/login')
+    .post(usersCtrl.login);
 };
